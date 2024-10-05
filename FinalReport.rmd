@@ -88,6 +88,12 @@ fisher.test(table1)
 `
   The p value shown is 0.00005896, it is very low so we need to run the fisherXY test.
 
+```{r}
+fisherXY(mydata$race,mydata$cappun, confL = 0.99, printAll = TRUE)
+```
+
+  The the p-values shown for the comparison of white aand black is 0.00001741, the comparison of white and other is 0.2565. The p-value for the comparison of the black and other group is 0.06299. These p-values are low & all largely differ from each other.
+
 
 # Discussion and Conclusion
 
