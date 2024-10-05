@@ -67,9 +67,13 @@ Looking at the graph with count we can see the black group has a more that oppos
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
 
+```{r}
+table1 <- xtabs(~cappun + race, data=mydata)
+rowPerc(table1)
+colPerc(table1)
+```
 
-
-
+  The white is in favor with cappun with about a 2:1 ratio, the black group are slightly against cappun, & the oher group is against cappun by around a 3:2.
 
 
 ## Inferential Results
